@@ -14,6 +14,7 @@ const App = () => {
   return (
     <SafeAreaView>
       <View>
+        {/* <Splash /> */}
         <Signup />
       </View>
     </SafeAreaView>

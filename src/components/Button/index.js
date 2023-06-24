@@ -2,12 +2,12 @@ import React from 'react';
 import {Text, TouchableOpacity} from 'react-native';
 import {styles} from './styles';
 
-const Button = ({title}) => {
+const Button = ({title, onPress, style}) => {
   return (
-    <TouchableOpacity style={styles.container}>
+    <TouchableOpacity style={[styles.container, style]}>
       <Text style={styles.title}>{title}</Text>
     </TouchableOpacity>
   );
 };
 
-export default Button;
+export default React.memo(Button);

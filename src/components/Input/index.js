@@ -18,6 +18,7 @@ const Input = ({label, placeholder, isPassword}) => {
           placeholder={placeholder}
           style={styles.input}
         />
+        {/* Show eye on password input */}
         {isPassword && (
           <Pressable onPress={onEyePress}>
             <Image
@@ -35,4 +36,4 @@ const Input = ({label, placeholder, isPassword}) => {
   );
 };
 
-export default Input;
+export default React.memo(Input);
