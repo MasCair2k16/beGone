@@ -17,7 +17,7 @@ const Header = ({
 
   const onSearchClick = () => {
     setShowSearchInput(s => !s);
-  }
+  };
 
   return (
     <View>

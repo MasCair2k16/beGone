@@ -23,11 +23,10 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 16,
     paddingVertical: 20,
     flex: 1,
-    // borderColor: 'yellow',
   },
   eye: {
     width: 24,
     height: 24,
     marginHorizontal: 16,
-  }
+  },
 });
