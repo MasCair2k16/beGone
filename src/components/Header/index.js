@@ -10,7 +10,9 @@ const Header = ({
   onLogout,
   showLogout,
   showSearch,
+  onSearch,
   showBack,
+  keyword
 }) => {
 
   const [showSearchInput, setShowSearchInput] = useState(false);
@@ -20,7 +22,7 @@ const Header = ({
   };
 
   return (
-    <View>
+    <View style={styles.mainContainer}>
       <View style={styles.container}>
         {/* Show Back */}
         {showBack && (
@@ -49,7 +51,7 @@ const Header = ({
 
       {/* Show input if user clicks on Search */}
       {showSearchInput && (
-        <Input placeholder="Type your keyword..." />
+        <Input onChangeText={onSearch} value={keyword} placeholder="Type your keyword..." />
       )}
     </View>
   );

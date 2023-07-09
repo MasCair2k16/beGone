@@ -2,11 +2,13 @@ import {StyleSheet} from 'react-native';
 import {colors} from '../../utils/colors';
 
 export const styles = StyleSheet.create({
+  mainContainer: {
+    paddingHorizontal: 24,
+  },
   container: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingHorizontal: 24,
   },
   title: {
     color: colors.black,
