@@ -21,8 +21,10 @@ const Header = ({
     setShowSearchInput(s => !s);
   };
 
+  const simpleHeader = !showBack && !showSearch && !showLogout;
+
   return (
-    <View style={styles.mainContainer}>
+    <View style={[styles.mainContainer, simpleHeader && styles.containerFavorites]}>
       <View style={styles.container}>
         {/* Show Back */}
         {showBack && (
